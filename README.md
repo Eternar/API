@@ -24,6 +24,8 @@ Available manifest files:
   - 'main' | Stable plugins
   - 'preview' or '84e1a89fe20baed1a4959516f496108225f22ee5' | Dev builds, may be unstable or uncompleted
 
+# Plugin package template
+
 ```
 "Plugins"
 {

@@ -106,3 +106,4 @@ public void OnPluginStarted()
 - Auto create folder inside the plugins folder
 - Version check before forcing an update
 - Skip configuration files on update
+- Add translation phrases file

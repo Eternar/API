@@ -104,3 +104,5 @@ public void OnPluginStarted()
 - Add support for databases in the package manager.
 - Add native functions for the logsystem
 - Auto create folder inside the plugins folder
+- Version check before forcing an update
+- Skip configuration files on update

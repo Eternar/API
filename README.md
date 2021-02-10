@@ -107,3 +107,4 @@ public void OnPluginStarted()
 - Version check before forcing an update
 - Skip configuration files on update
 - Add translation phrases file
+- Fix lateload issues

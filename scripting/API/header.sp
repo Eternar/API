@@ -4,5 +4,5 @@ public Plugin myinfo =
 	author = "Eternar",
 	description = "Plugin Manager",
 	version = API_VERSION,
-	url = "https://github.com/Eternar"
+	url = "https://github.com/Eternar/API"
 };

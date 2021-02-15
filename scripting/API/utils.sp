@@ -69,20 +69,20 @@ stock void DownloadFile(const char[] url, const char[] path, int client, bool la
 	File file = OpenFile(path, "wb");
 	if (file == INVALID_HANDLE)
 	{
-        LogMsg(Error, "No permission to write into '%s'", path);
+		LogMsg(Error, "No permission to write into '%s'", path);
 		delete file;
 	}
 
 	Handle hRequest = SteamWorks_CreateHTTPRequest(k_EHTTPMethodGET, url);
 
-    DataPack pack = new DataPack();
-    pack.WriteString(path);
-    pack.WriteCell(client);
-    pack.WriteCell(last);
+    	DataPack pack = new DataPack();
+    	pack.WriteString(path);
+    	pack.WriteCell(client);
+    	pack.WriteCell(last);
 	if(!hRequest || !SteamWorks_SetHTTPRequestContextValue(hRequest, pack) || !SteamWorks_SetHTTPCallbacks(hRequest, OnFileDownloaded) || !SteamWorks_SendHTTPRequest(hRequest))
-    {
-        LogMsg(Error, "Failed to CreateHTTPRequest ('%s')", path);
-        delete pack;
-        delete hRequest;
-    }
+	{
+        	LogMsg(Error, "Failed to CreateHTTPRequest ('%s')", path);
+        	delete pack;
+        	delete hRequest;
+	}
 }
